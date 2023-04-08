@@ -1,0 +1,39 @@
+{
+  "name": "to-do-list-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --ignore-watch node_modules src/server.ts",
+    "build": "tsc",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "test": "cross-env NODE_ENV=test SECRET_KEY=secret_key jest --verbose --runInBand"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.15",
+    "@types/jest": "^28.1.4",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/supertest": "^2.0.12",
+    "@types/uuid-validate": "^0.0.1",
+    "jest": "^28.1.2",
+    "sqlite3": "^5.0.8",
+    "supertest": "^6.2.4",
+    "ts-jest": "^28.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6",
+    "uuid-validate": "^0.0.3",
+    "yup": "^0.32.11"
+  }
+}
