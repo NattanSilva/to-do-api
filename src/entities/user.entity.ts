@@ -23,9 +23,6 @@ class User {
   @Column()
   password: string;
 
-  @Column({ default: true })
-  isActive: boolean;
-
   @CreateDateColumn()
   createdAt: Date;
 

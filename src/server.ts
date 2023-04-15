@@ -12,6 +12,6 @@ import AppDataSource from "./data-source";
   })
   
   app.listen(4012, () => {
-    console.log(`Server running at http://localhost:8000`)
+    console.log(`Server running at http://localhost:4012`)
   })    
 })()
