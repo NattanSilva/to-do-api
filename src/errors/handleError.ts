@@ -13,10 +13,9 @@ const handleError = async (
   }
 
   if (error instanceof ValidationError) {
+    console.log(error)
     throw new AppError(400, error.message);
   }
-
-  console.log(error);
 
   return res.status(500).json({ message: "Internal server error" });
 };

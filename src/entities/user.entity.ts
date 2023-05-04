@@ -5,9 +5,11 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from "typeorm";
+import { Task } from "./task.entity";
 
 @Entity("users")
 class User {
@@ -28,6 +30,9 @@ class User {
 
   @UpdateDateColumn()
   updatedAt: Date;
+
+  @OneToMany(() => Task, task => task.owner)
+  tasks: Task[];
 
   @BeforeUpdate()
   @BeforeInsert()

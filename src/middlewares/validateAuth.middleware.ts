@@ -22,7 +22,7 @@ export const validateAuthMiddleware = async (
     throw new AppError(401, "Invalid token");
   }
 
-  jwt.verify(token, process.env.SECRET_KEY, async (error, decoded) => {
+  jwt.verify(token, process.env.SECRET_KEY, (error, decoded) => {
     if (error) {
       throw new AppError(401, error.message);
     }
