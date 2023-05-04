@@ -1,15 +1,26 @@
-import {createSessionController} from "./session.controller";
+import { createSessionController } from "./session.controller";
+import {
+  createTaskController,
+  listAllTasksController,
+  listOneTasksController,
+  updateTaskController,
+  deleteTaskController
+} from "./task.controller";
 import {
   createUserController,
   retrieveUserController,
-  updateUserController
+  updateUserController,
 } from "./user.controller";
-import {createTaskController} from "./task.controller";
 
 export {
   createSessionController,
   createUserController,
   retrieveUserController,
   updateUserController,
-  createTaskController
+  createTaskController,
+  listAllTasksController,
+  listOneTasksController,
+  updateTaskController,
+  deleteTaskController
+
 };

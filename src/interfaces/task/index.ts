@@ -7,13 +7,14 @@ export interface ITask {
   createdAt: Date;
   updatedAt: Date;
   owner: IUser;
-};
+}
 
 export interface ITaskRequest {
   content: string;
   owner: IUser;
-};
+}
 
 export interface ITaskUpdate {
   content?: string;
-};
+  completed?: boolean;
+}
