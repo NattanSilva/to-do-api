@@ -28,7 +28,7 @@ Para utilizar esta API em desenvolvimento basta clonar este repositório em sua 
   APP_PORT="port que a aplicação deve rodar"
 ```
 
-3. Rodar a aplicação utilizandoo comando:
+3. Rodar a aplicação utilizando o comando:
 
 ```
   yarn dev
