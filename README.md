@@ -31,5 +31,5 @@ Para utilizar esta API em desenvolvimento basta clonar este repositório em sua 
 3. Rodar a aplicação utilizando o comando:
 
 ```
-  yarn dev
+  yarn dev ou npm run dev
 ```
