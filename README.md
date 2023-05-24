@@ -16,7 +16,7 @@ Para utilizar esta API em desenvolvimento basta clonar este repositório em sua 
   yarn install ou npm install
 ```
 
-2. Criar um arquivo `.env` e preenchê-lo com os dados seguindo o arquivo `.env.example` para conexão com o bando de dados PostgreSQL.
+2. Criar um arquivo `.env` e preenchê-lo com os dados seguindo o arquivo `.env.example` para conexão com o banco de dados PostgreSQL.
 
 ```
   POSTGRES_HOST="seu host"
