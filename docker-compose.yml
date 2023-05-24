@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: node-api
+    build: .
+    ports:
+      - $APP_PORT:$APP_PORT # port-local:port-docker
+    env_file:
+      - .env
+    depends_on:
+      postgres:
+        condition: service_healthy
+    command: bash -c "yarn typeorm migration:run -d src/data-source && yarn dev"
+    volumes:
+      - . :/app
+
+  postgres:
+    container_name: pg-db
+    image: postgres:latest
+    ports:
+      - $POSTGRES_PORT:$POSTGRES_PORT # port-local:port-docker
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DATABASE"]
+      interval: 10S
+      timeout: 5s
+      retries: 5
+      start_period: 5s

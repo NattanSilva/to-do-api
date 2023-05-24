@@ -1,5 +1,9 @@
-FROM postgres:latest
+FROM node
 
-ARG POSTGRES_PASSWORD=1234
+WORKDIR /app
 
-ENV POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+COPY package.json /app
+
+RUN yarn
+
+COPY . /app
