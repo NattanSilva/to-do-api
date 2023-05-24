@@ -4,7 +4,7 @@ Esse projeto foi realizado vizando uma API Rest com cadastro de usuários que po
 
 ## Documentação
 
-A documentação deste projeto está contida no documento `Insomnia_configs.json`, basta copiar o código dentro do documento e realizar a <a href="https://docs.insomnia.rest/insomnia/import-export-data" target="_blank">importação</a> dentro do Insomnia. Neste documento estão contidos exemplos, enviroments e testes manuais das rotas da API. Cada parte da documentação possui a forma requerida do body para ca uma das situações utilizadas.
+A documentação deste projeto está contida no documento `Insomnia_configs.json`, basta copiar o código dentro do documento e realizar a <a href="https://docs.insomnia.rest/insomnia/import-export-data" target="_blank">importação</a> dentro do Insomnia. Neste documento estão contidos exemplos, enviroments e testes manuais das rotas da API. Cada parte da documentação possui a forma requerida do body para cada uma das situações utilizadas.
 
 ## Configurações
 
